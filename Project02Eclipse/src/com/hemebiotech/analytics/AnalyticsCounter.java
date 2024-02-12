@@ -6,7 +6,7 @@ public class AnalyticsCounter {
 	public static void main(String args[]) {
 
 		//Entité qui posséde la méthode pour lire un fichier
-		ReadSymptomDataFromFile symptoms = new ReadSymptomDataFromFile("symptoms.txt");
+		ReadSymptomDataFromFile symptoms = new ReadSymptomDataFromFile("./symptoms.txt");
 
 		//Methode qui lit le fichier
 		TreeMap<String, Integer> mapSymptoms = symptoms.GetSymptoms();

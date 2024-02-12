@@ -28,7 +28,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		TreeMap<String, Integer> mapSymptoms = new TreeMap<>();
 
 		// Lecture du fichier avec un try with ressources pour fermeture automatiquement du fichier
-		try (Scanner scanner = new Scanner(new File("./symptoms.txt"))) {
+		try (Scanner scanner = new Scanner(new File(filepath))) {
 			while (scanner.hasNextLine()) {
 				String line = scanner.nextLine();
 				mapSymptoms

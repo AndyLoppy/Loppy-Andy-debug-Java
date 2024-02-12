@@ -20,7 +20,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
     public void WriterSymptoms(TreeMap<String, Integer> mapSymptoms) {
 
         // Ecriture du resultat dans le fichier result.out
-        try (FileWriter writer = new FileWriter("result.out")) {
+        try (FileWriter writer = new FileWriter(filepath)) {
             mapSymptoms.forEach((key, value) -> {
                 try {
                     writer.write(key + " : " + value + "\n");
